@@ -1,10 +1,10 @@
 # Copilot Anywhere in channels
 
-A private, interactive concept for capturing an in-person conversation with Copilot notetaking, publishing the completed conversation to a Teams channel, and using its notes in later channel questions.
+An interactive concept for capturing an in-person conversation with Copilot notetaking, publishing the completed conversation to a Teams channel, and using its notes in later channel questions.
 
 ## Try it
 
-Open `index.html` in a browser. No build, package installation, backend, or account is required to run the prototype locally.
+Open the [live prototype](https://nimishgargcmd.github.io/Copilot-Anywhere-in-Channels/), or open `index.html` locally in a browser. No build, package installation, backend, or account is required to run the prototype locally.
 
 1. Open the channel's meeting menu and choose **Take notes with Copilot**.
 2. End notetaking, then close the saved screen to return to the channel post.
@@ -17,13 +17,11 @@ All conversations, decisions, transcription, speaker attribution, and Copilot re
 
 Sessions, replies, and custom summaries are saved in the browser's local storage. Each visitor has independent demo data. Copied session links only resolve in browsers that already have that session's data; they do not share content with another visitor. **Reset demo** restores the initial sample.
 
-Do not enter confidential information. Existing team/person labels are retained for this private demo. Reference screenshots and surrounding internal documents are intentionally excluded from Git via a root-level file allowlist.
+Do not enter confidential information. This demo and its source code are public; existing team/person labels are retained with the owner's approval. Reference screenshots and surrounding internal documents are intentionally excluded from Git via a root-level file allowlist.
 
 ## Hosting
 
-The repository is intended to remain private. A hosting provider has not yet been selected or configured. Deploy the repository root as a static site with no build step once a company-approved host and access policy are agreed.
-
-A private Git repository does not automatically make a deployed website private. Configure site authentication separately where required. Azure Static Web Apps or an existing approved internal static host can serve these files. Do not enable public hosting without approval.
+GitHub Pages publishes the repository root from the `main` branch. The repository and website are public with the owner's approval. Pushing changes to `main` triggers a Pages deployment; no application build step is required.
 
 All runtime assets are bundled alongside `index.html`; the site works at a domain root or under a repository subpath.
 
