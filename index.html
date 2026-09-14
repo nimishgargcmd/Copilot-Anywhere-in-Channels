@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Copilot Anywhere in channels</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="channel.css">
+  <link rel="stylesheet" href="capture.css">
+  <script src="lucide.min.js" defer></script>
+  <script src="model.js" defer></script>
+  <script src="channel-app.js" defer></script>
+</head>
+<body>
+  <header class="studio"><span><strong>Teams</strong><span class="studio-divider">/</span>System of Work</span><span class="studio-tools"><span class="prototype-label">Interactive concept</span><button id="reset" class="icon-button" title="Reset demo" aria-label="Reset demo"><i data-lucide="rotate-ccw"></i></button></span></header>
+  <main class="device" aria-label="Teams mobile prototype">
+    <div class="statusbar" aria-hidden="true"><span>9:53</span><span><i data-lucide="signal"></i><i data-lucide="wifi"></i><span class="battery">75</span></span></div>
+    <div id="app"></div>
+    <div class="home-indicator" aria-hidden="true"></div>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  </main>
+  <p class="demo-disclosure">Simulated capture and sharing · Sample conversations and portraits</p>
+</body>
+</html>
